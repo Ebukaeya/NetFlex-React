@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap";
+import { Card } from "react-bootstrap"
 const SingleMovie = (props) => (
   <>
     <Card key={props.data.imdbID}>
@@ -11,5 +11,5 @@ const SingleMovie = (props) => (
       <Card.Body>{props.data.Title}</Card.Body>
     </Card>
   </>
-);
-export default SingleMovie;
+)
+export default SingleMovie

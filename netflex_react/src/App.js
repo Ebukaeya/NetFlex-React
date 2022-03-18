@@ -1,8 +1,8 @@
-import "./App.css";
-import Main from "./Component/Main";
+import "./App.css"
+import Main from "./components/Main"
 // import Middle from "./Component/Middle";
-import "./App.css";
-import Footer from "./Components/Footer";
+import "./App.css"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Main />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
