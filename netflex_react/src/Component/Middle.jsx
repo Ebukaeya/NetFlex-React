@@ -1,6 +1,6 @@
 import { Component } from "react";
 // import FirstMovies from "./FirstMovies";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import SingleMovie from "./SingleMovie";
 
 class Middle extends Component {
@@ -34,9 +34,11 @@ class Middle extends Component {
       <div>
         <Container>
           <Row>
-            {this.state.theMovies.map((movie) => (
-              <SingleMovie data={movie} />
-            ))}
+            <Col className="col-sm-6 col-md-4 col-xl-3">
+              {this.state.theMovies.map((movie) => (
+                <SingleMovie data={movie} />
+              ))}
+            </Col>
           </Row>
         </Container>
       </div>
