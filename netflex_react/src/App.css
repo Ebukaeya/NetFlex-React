@@ -42,8 +42,48 @@
   color: white;
 }
 #endPage{
-  
+  height: 10px;
   margin: 0rem !important;
   margin: 20%;
   
+}
+
+
+#logoNetflix{
+  height: 80px;
+  transform: translateX(-190px);
+}
+
+.menu2{
+  transform: translateX(-160px);
+  display: flex;
+  align-self: center;
+  color: aliceblue;
+  margin: 15px;
+  font-weight: 200;
+  font-size: larger;
+}
+
+#mainContainer2{
+  display: flex;
+  justify-content: space-between;
+}
+
+#menuLista{
+  display: flex;
+}
+
+#searchBar{
+  transform: translateX(350px);
+  margin-top: 22px;
+}
+#lupa{
+  color: aliceblue;
+  transform: translateX(80px);
+  margin-bottom: 5px;
+}
+
+#kids{
+  transform: translateX(320px);
+  margin-bottom: 25px;
 }
