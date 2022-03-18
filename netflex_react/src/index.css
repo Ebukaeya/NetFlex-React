@@ -40,7 +40,8 @@ code {
   color: #e5e5e5;
 }
 .social-links {
-  display: block;
+  display: flex;
+  justify-content: start;
 }
 
 li {

@@ -3,7 +3,7 @@ import Footer from "./Components/Footer"
 
 function App() {
   return (
-    <div className="App bg-dark">
+    <div className="App">
       <Footer />
     </div>
   )
