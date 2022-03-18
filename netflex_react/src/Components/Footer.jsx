@@ -1,8 +1,11 @@
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 const Footer = () => {
   return (
     <section className="bg-dark">
-      <div id="footer">
-        <div className="rowS row my-4 social-links">
+      <div id="footer" className="bg-dark fixed-bottom">
+        <div id="logos" className="rowS row my-4 social-links m-5">
           <div className="">
             <svg
               width="24"
@@ -70,11 +73,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <footer className="rowS row my-4">
-          <div id="div" className="col cols-md-3">
+        <footer id="endPage" className="rowS row my-4 m-5">
+          <div id="div" className="col cols-md-3 ">
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">
+                <a href="" className="nav-link p-0 text-muted  ">
                   Audio and Subtitles
                 </a>
               </li>
@@ -164,6 +167,6 @@ const Footer = () => {
         </div>
       </div>
     </section>
-  )
-}
-export default Footer
+  );
+};
+export default Footer;

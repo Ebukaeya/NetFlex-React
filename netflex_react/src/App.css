@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+#logos{
+  transform: translate(9%);
+  color: white;
+}
+#endPage{
+  
+  margin: 0rem !important;
+  margin: 20%;
+  
+}
