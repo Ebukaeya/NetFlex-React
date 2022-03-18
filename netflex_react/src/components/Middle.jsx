@@ -1,33 +1,30 @@
-import { Component } from "react";
+import { Component } from "react"
 // import FirstMovies from "./FirstMovies";
-import { Container, Row, Col } from "react-bootstrap";
-import SingleMovie from "./SingleMovie";
+import { Container, Row, Col } from "react-bootstrap"
+import SingleMovie from "./SingleMovie"
 
 class Middle extends Component {
   state = {
     theMovies: [],
-  };
+  }
 
-  componentDidMount = () => this.Fetchresult();
+  componentDidMount = () => this.Fetchresult()
 
   Fetchresult = async () => {
     try {
-      let res = await fetch(
-        " http://www.omdbapi.com/?apikey=acc853ec&s=" + this.props.saga
-      );
+      let res = await fetch(" http://www.omdbapi.com/?apikey=acc853ec&s=" + this.props.saga)
 
       if (res.ok) {
-        let data = await res.json();
-        console.log(data);
+        let data = await res.json()
+        console.log(data)
         this.setState({
           theMovies: data.Search,
-        });
-        // console.log(this.state.theMovies);
+        })
       }
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
-  };
+  }
 
   render() {
     return (
@@ -42,7 +39,7 @@ class Middle extends Component {
           </Row>
         </Container>
       </div>
-    );
+    )
   }
 }
-export default Middle;
+export default Middle

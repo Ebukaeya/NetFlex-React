@@ -1,7 +1,5 @@
-// import { Container, Row, Col } from "react-bootstrap";
-import React from "react";
-// import FirstMovies from "./FirstMovies";
-import Middle from "./Middle";
+import React from "react"
+import Middle from "./Middle"
 
 const Main = () => (
   <>
@@ -12,5 +10,5 @@ const Main = () => (
     <h3>Terminator</h3>
     <Middle saga={"terminator"} />
   </>
-);
-export default Main;
+)
+export default Main
