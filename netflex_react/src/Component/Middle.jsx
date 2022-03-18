@@ -1,5 +1,7 @@
 import { Component } from "react";
-import FirstMovies from "./FirstMovies";
+// import FirstMovies from "./FirstMovies";
+import { Container, Row } from "react-bootstrap";
+import SingleMovie from "./SingleMovie";
 
 class Middle extends Component {
   state = {
@@ -18,8 +20,9 @@ class Middle extends Component {
         let data = await res.json();
         console.log(data);
         this.setState({
-          theMovies: data,
+          theMovies: data.Search,
         });
+        // console.log(this.state.theMovies);
       }
     } catch (error) {
       console.log(error);
@@ -29,7 +32,13 @@ class Middle extends Component {
   render() {
     return (
       <div>
-        <FirstMovies data={this.state.theMovies}
+        <Container>
+          <Row>
+            {this.state.theMovies.map((movie) => (
+              <SingleMovie data={movie} />
+            ))}
+          </Row>
+        </Container>
       </div>
     );
   }
