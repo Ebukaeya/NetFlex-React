@@ -1,4 +1,4 @@
-import { Col, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 const SingleMovie = (props) => (
   <>
     <Card key={props.data.imdbID}>
