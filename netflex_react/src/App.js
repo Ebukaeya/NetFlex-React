@@ -1,6 +1,5 @@
 import "./App.css"
 import Main from "./components/Main"
-// import Middle from "./Component/Middle";
 import "./App.css"
 import Footer from "./components/Footer"
 
